@@ -1,0 +1,117 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(242, 203, 137);
+}
+.main{
+    /* width: 80rem; */
+    display: flex;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+}
+.form_container{
+    display: flex;
+    gap: 1rem;
+}
+.form_container>input,.form_container>button{ 
+        /* height: 2rem; */
+        width: 19%;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        border: 2px solid aqua;
+        /* padding-left: 0.8rem; */
+}
+.form_container>button:hover{
+    background-color: aqua;
+    border-radius: 0.2rem;
+    outline: none;
+    cursor: pointer;
+}
+.heading{
+    margin: 2rem;
+    color: red;
+    animation: header_animate 3s ease-in-out 5s infinite;
+}
+@keyframes header_animate {
+    0% {
+            opacity: 0;
+            transform: translateY(-50px);
+            /* color: aliceblue; */
+        }
+    50% {
+        opacity: 0.5;
+        transform: translateY(25px);
+        color: yellow;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        color: aqua;
+    }
+}
+.score_board{
+    width: 100%;
+    background-color: aquamarine;
+    border-radius: 0.5rem;
+    /* color: white; */
+    color: rgb(216, 55, 55);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.player{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem;
+    font-weight: 300;
+} 
+.player:hover{
+    background-color: aqua;
+    transition: 1s ease-in;
+    border-radius: .8rem    ;
+}  
+.player>span,.player>button{
+    width: 14%;
+    text-align: center;
+   
+}
+.player>button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+    color: brown;
+    /* font-weight: bold; */
+
+}   
+.decrease:hover{
+    background-color: red;
+    border-radius: 1rem;
+    padding: .3rem;
+    transition: 1s ease-in-out;
+}
+.increase:hover{
+    padding: .3rem;
+    border-radius: 1rem;
+    background-color: green;
+    transition: 1.3s ease-out;
+}   
+.create_his{
+    font-size: 10px; 
+    color: rgb(225, 68, 68);   
+}
+.delete_player{
+    color: red;
+}
+.delete_player:hover{
+    background-color: cadetblue;
+    padding: .2rem;
+    border-radius: 1rem;
+}
